@@ -11,7 +11,11 @@ import UIKit
 
 open class EAAlertView: NSObject {
     
-    init(test: String) {
-        print(test)
+    public override init() {
+        
+    }
+    
+    func printTestFunction(text: String) -> String {
+        return "Hello world: \(text)"
     }
 }
