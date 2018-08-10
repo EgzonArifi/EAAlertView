@@ -179,7 +179,7 @@ open class EAAlertView: UIViewController {
     var contentView = UIView()
     var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
     var circleView = UIView()
-    var circleIconView : UIView?
+    var circleIconView = UIView()
     var timeout: EATimeoutConfiguration?
     var showTimeoutTimer: Timer?
     var timeoutTimer: Timer?
@@ -230,12 +230,12 @@ open class EAAlertView: UIViewController {
         contentView.addSubview(viewText)
         // Circle View
         /*circleBG.backgroundColor = appearance.circleBackgroundColor
-        circleBG.layer.cornerRadius = circleBG.frame.size.height / 2
-        baseView.addSubview(circleBG)
-        circleBG.addSubview(circleView)
-        let x = (kCircleHeightBackground - appearance.kCircleHeight) / 2
-        circleView.frame = CGRect(x:x, y:x+appearance.kCircleTopPosition, width:appearance.kCircleHeight, height:appearance.kCircleHeight)
-        circleView.layer.cornerRadius = circleView.frame.size.height / 2*/
+         circleBG.layer.cornerRadius = circleBG.frame.size.height / 2
+         baseView.addSubview(circleBG)
+         circleBG.addSubview(circleView)
+         let x = (kCircleHeightBackground - appearance.kCircleHeight) / 2
+         circleView.frame = CGRect(x:x, y:x+appearance.kCircleTopPosition, width:appearance.kCircleHeight, height:appearance.kCircleHeight)
+         circleView.layer.cornerRadius = circleView.frame.size.height / 2*/
         // Title
         labelTitle.numberOfLines = 0
         labelTitle.textAlignment = .center
@@ -253,6 +253,7 @@ open class EAAlertView: UIViewController {
         viewText.textContainer.lineFragmentPadding = 0;
         viewText.font = appearance.kTextFont
         // Colours
+        viewColor = .white
         contentView.backgroundColor = appearance.contentViewColor
         viewText.backgroundColor = appearance.contentViewColor
         labelTitle.textColor = appearance.titleColor
@@ -393,7 +394,7 @@ open class EAAlertView: UIViewController {
     }
     
     override open func touchesEnded(_ touches:Set<UITouch>, with event:UIEvent?) {
-        if (event?.touches(for: view)?.count)! > 0 {
+        if event?.touches(for: view)?.count > 0 {
             view.endEditing(true)
         }
     }
@@ -672,10 +673,10 @@ open class EAAlertView: UIViewController {
         // Alert view colour and images
         circleView.backgroundColor = viewColor
         
-        circleView.addSubview(circleIconView!)
-        let x = (appearance.kCircleHeight - appearance.kCircleIconHeight) / 2
-        circleIconView!.frame = CGRect( x: x, y: x, width: appearance.kCircleIconHeight, height: appearance.kCircleIconHeight)
-        circleIconView?.layer.masksToBounds = true
+        //        circleView.addSubview(circleIconView)
+        //        let x = (appearance.kCircleHeight - appearance.kCircleIconHeight) / 2
+        //        circleIconView.frame = CGRect( x: x, y: x, width: appearance.kCircleIconHeight, height: appearance.kCircleIconHeight)
+        //        circleIconView?.layer.masksToBounds = true
         
         for txt in inputs {
             txt.layer.borderColor = viewColor.cgColor
@@ -865,5 +866,25 @@ open class EAAlertView: UIViewController {
 extension EAAlertView {
     var subViewsWidth: CGFloat {
         return appearance.kWindowWidth - 2 * appearance.margin.horizontal
+    }
+}
+
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l < r
+    case (nil, _?):
+        return true
+    default:
+        return false
+    }
+}
+
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    switch (lhs, rhs) {
+    case let (l?, r?):
+        return l > r
+    default:
+        return rhs < lhs
     }
 }
