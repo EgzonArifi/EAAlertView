@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7722C077211E050A007A2384 /* EAAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7722C076211E050A007A2384 /* EAAlertView.swift */; };
+		777DEFA3211E0AA8008A374E /* EAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA2211E0AA8008A374E /* EAButton.swift */; };
+		777DEFA5211E0AD1008A374E /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA4211E0AD1008A374E /* Enums.swift */; };
+		777DEFA7211E0B01008A374E /* EAAlertViewResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA6211E0B01008A374E /* EAAlertViewResponder.swift */; };
+		777DEFA9211E0B51008A374E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA8211E0B51008A374E /* Extension.swift */; };
 		77C16910211DF88400021217 /* EAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C1690E211DF88400021217 /* EAAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7722C076211E050A007A2384 /* EAAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAAlertView.swift; sourceTree = "<group>"; };
+		777DEFA2211E0AA8008A374E /* EAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAButton.swift; sourceTree = "<group>"; };
+		777DEFA4211E0AD1008A374E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		777DEFA6211E0B01008A374E /* EAAlertViewResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAAlertViewResponder.swift; sourceTree = "<group>"; };
+		777DEFA8211E0B51008A374E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		77C1690B211DF88400021217 /* EAAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EAAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C1690E211DF88400021217 /* EAAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAAlertView.h; sourceTree = "<group>"; };
 		77C1690F211DF88400021217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 				77C1690E211DF88400021217 /* EAAlertView.h */,
 				77C1690F211DF88400021217 /* Info.plist */,
 				7722C076211E050A007A2384 /* EAAlertView.swift */,
+				777DEFA2211E0AA8008A374E /* EAButton.swift */,
+				777DEFA4211E0AD1008A374E /* Enums.swift */,
+				777DEFA6211E0B01008A374E /* EAAlertViewResponder.swift */,
+				777DEFA8211E0B51008A374E /* Extension.swift */,
 			);
 			path = EAAlertView;
 			sourceTree = "<group>";
@@ -134,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777DEFA9211E0B51008A374E /* Extension.swift in Sources */,
+				777DEFA7211E0B01008A374E /* EAAlertViewResponder.swift in Sources */,
 				7722C077211E050A007A2384 /* EAAlertView.swift in Sources */,
+				777DEFA5211E0AD1008A374E /* Enums.swift in Sources */,
+				777DEFA3211E0AA8008A374E /* EAButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
