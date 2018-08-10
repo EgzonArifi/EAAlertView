@@ -13,9 +13,11 @@
 		777DEFA7211E0B01008A374E /* EAAlertViewResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA6211E0B01008A374E /* EAAlertViewResponder.swift */; };
 		777DEFA9211E0B51008A374E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777DEFA8211E0B51008A374E /* Extension.swift */; };
 		77C16910211DF88400021217 /* EAAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 77C1690E211DF88400021217 /* EAAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1957AAA32D6FCA2A0250728 /* Pods_EAAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21019456BF17BC4D3177E6A0 /* Pods_EAAlertView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21019456BF17BC4D3177E6A0 /* Pods_EAAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7722C076211E050A007A2384 /* EAAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAAlertView.swift; sourceTree = "<group>"; };
 		777DEFA2211E0AA8008A374E /* EAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAButton.swift; sourceTree = "<group>"; };
 		777DEFA4211E0AD1008A374E /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		77C1690B211DF88400021217 /* EAAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EAAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C1690E211DF88400021217 /* EAAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAAlertView.h; sourceTree = "<group>"; };
 		77C1690F211DF88400021217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45E5BC8B7C5FBC14D865E81 /* Pods-EAAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlertView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EAAlertView/Pods-EAAlertView.release.xcconfig"; sourceTree = "<group>"; };
+		E0E394A13D88ADA310AB6D7D /* Pods-EAAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EAAlertView/Pods-EAAlertView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1957AAA32D6FCA2A0250728 /* Pods_EAAlertView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				77C1690D211DF88400021217 /* EAAlertView */,
 				77C1690C211DF88400021217 /* Products */,
+				FEB651DA77DE8E22F55CC607 /* Pods */,
+				A7EC741BB367E4CF04BF7471 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = EAAlertView;
 			sourceTree = "<group>";
 		};
+		A7EC741BB367E4CF04BF7471 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21019456BF17BC4D3177E6A0 /* Pods_EAAlertView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB651DA77DE8E22F55CC607 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0E394A13D88ADA310AB6D7D /* Pods-EAAlertView.debug.xcconfig */,
+				B45E5BC8B7C5FBC14D865E81 /* Pods-EAAlertView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -85,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C16913211DF88400021217 /* Build configuration list for PBXNativeTarget "EAAlertView" */;
 			buildPhases = (
+				16D5D22A255FDC65DF9DC7DE /* [CP] Check Pods Manifest.lock */,
 				77C16906211DF88400021217 /* Sources */,
 				77C16907211DF88400021217 /* Frameworks */,
 				77C16908211DF88400021217 /* Headers */,
@@ -140,6 +165,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D5D22A255FDC65DF9DC7DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EAAlertView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77C16906211DF88400021217 /* Sources */ = {
@@ -279,6 +325,7 @@
 		};
 		77C16914211DF88400021217 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E394A13D88ADA310AB6D7D /* Pods-EAAlertView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -307,6 +354,7 @@
 		};
 		77C16915211DF88400021217 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45E5BC8B7C5FBC14D865E81 /* Pods-EAAlertView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
