@@ -6,6 +6,7 @@ s.homepage     = "https://github.com/EgzonArifi/EAAlertView"
 s.license      = "MIT"
 s.author       = { "Egzon Arifi" => "egzon.r.arifi@gmail.com" }
 s.platform     = :ios, "11.0"
-s.source       = { :git => "https://github.com/EgzonArifi/EAAlertView.git", :tag => "#{s.version}" }
+s.source       = { :git => "https://github.com/EgzonArifi/EAAlertView.git", :branch => "master",
+:tag => s.version.to_s }
 s.source_files  = "EAAlertView/**/*.{swift,h}"
 end
