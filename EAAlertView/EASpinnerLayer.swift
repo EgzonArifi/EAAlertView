@@ -1,5 +1,5 @@
 //
-//  EMLoadingIndicatorLayer.swift
+//  EALoadingIndicatorLayer.swift
 //  ButtonAnimation
 //
 //  Created by Eduardo Moll on 11/22/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class EMSpinnerLayer: CAShapeLayer {
+internal class EASpinnerLayer: CAShapeLayer {
   
   internal var color: CGColor? = UIColor.white.cgColor {
     willSet {
@@ -27,7 +27,7 @@ internal class EMSpinnerLayer: CAShapeLayer {
 }
 
 // MARK: - Setup
-internal extension EMSpinnerLayer {
+internal extension EASpinnerLayer {
   
   func setUp(frame: CGRect) {
     self.frame = CGRect(x: 0, y: 0, width: frame.height, height: frame.height)
@@ -45,7 +45,7 @@ internal extension EMSpinnerLayer {
 }
 
 // MARK: - Animation Methods
-internal extension EMSpinnerLayer {
+internal extension EASpinnerLayer {
 
   func startAnimation() {
     let strokeStartAnimation = CABasicAnimation(keyPath: "strokeStart")
