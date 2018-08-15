@@ -57,7 +57,7 @@ _ = alert.show("Title", subTitle: "subtitle")
 
 ## Installing
 
-#### Manually
+#### Cocoapods
 
  `pod 'EAAlertView'`
 
