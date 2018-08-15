@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "EMSpinnerButton.h"
+#import "EAAlertView.h"
 
-FOUNDATION_EXPORT double EMSpinnerButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char EMSpinnerButtonVersionString[];
+FOUNDATION_EXPORT double EAAlertViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char EAAlertViewVersionString[];
 

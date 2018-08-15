@@ -58,7 +58,7 @@ open class EAAlertView: UIViewController {
             public var horizontal: CGFloat = 12
             
             public init(titleTop: CGFloat = 30,
-                        textViewBottom: CGFloat = 12,
+                        textViewBottom: CGFloat = 20,
                         buttonSpacing: CGFloat = 10,
                         textFieldSpacing: CGFloat = 15,
                         bottom: CGFloat = 14,
@@ -430,26 +430,29 @@ open class EAAlertView: UIViewController {
         txt.font = appearance.kTextFont
         //txt.autocapitalizationType = UITextAutocapitalizationType.Words
         //txt.clearButtonMode = UITextFieldViewMode.WhileEditing
+        txt.isEditable = false
         txt.layer.masksToBounds = true
         txt.layer.borderWidth = 0.0
+        txt.isEditable = false
         contentView.addSubview(txt)
         input.append(txt)
         return txt
     }
     
     @discardableResult
-    open func addButton(_ title:String, backgroundColor:UIColor? = nil, textColor:UIColor? = nil, showTimeout:EAButton.ShowTimeoutConfiguration? = nil, action:@escaping ()->Void)->EAButton {
+    open func addButton(backgroundImage:UIImage? = nil ,_ title:String, backgroundColor:UIColor? = nil, textColor:UIColor? = nil, showTimeout:EAButton.ShowTimeoutConfiguration? = nil, action:@escaping ()->Void)->EAButton {
         let btn = addButton(title, backgroundColor: backgroundColor, textColor: textColor, showTimeout: showTimeout)
         btn.actionType = EAActionType.closure
         btn.action = action
         btn.addTarget(self, action:#selector(EAAlertView.buttonTapped(_:)), for:.touchUpInside)
         btn.addTarget(self, action:#selector(EAAlertView.buttonTapDown(_:)), for:[.touchDown, .touchDragEnter])
         btn.addTarget(self, action:#selector(EAAlertView.buttonRelease(_:)), for:[.touchUpInside, .touchUpOutside, .touchCancel, .touchDragOutside] )
+        btn.setBackgroundImage(backgroundImage, for: .normal)
         return btn
     }
     
     @discardableResult
-    open func addButton(_ title:String, backgroundColor:UIColor? = nil, textColor:UIColor? = nil, showTimeout:EAButton.ShowTimeoutConfiguration? = nil, target:AnyObject, selector:Selector)->EAButton {
+    open func addButton(backgroundImage:UIImage? = nil,_ title:String, backgroundColor:UIColor? = nil, textColor:UIColor? = nil, showTimeout:EAButton.ShowTimeoutConfiguration? = nil, target:AnyObject, selector:Selector)->EAButton {
         let btn = addButton(title, backgroundColor: backgroundColor, textColor: textColor, showTimeout: showTimeout)
         btn.actionType = EAActionType.selector
         btn.target = target
@@ -457,6 +460,7 @@ open class EAAlertView: UIViewController {
         btn.addTarget(self, action:#selector(EAAlertView.buttonTapped(_:)), for:.touchUpInside)
         btn.addTarget(self, action:#selector(EAAlertView.buttonTapDown(_:)), for:[.touchDown, .touchDragEnter])
         btn.addTarget(self, action:#selector(EAAlertView.buttonRelease(_:)), for:[.touchUpInside, .touchUpOutside, .touchCancel, .touchDragOutside] )
+        btn.setBackgroundImage(backgroundImage, for: .normal)
         return btn
     }
     
@@ -476,6 +480,7 @@ open class EAAlertView: UIViewController {
         btn.showTimeout = showTimeout
         contentView.addSubview(btn)
         buttons.append(btn)
+        
         return btn
     }
     
@@ -679,21 +684,21 @@ open class EAAlertView: UIViewController {
         //        circleIconView?.layer.masksToBounds = true
         
         for txt in inputs {
-            txt.layer.borderColor = viewColor.cgColor
+            txt.layer.borderColor = #colorLiteral(red: 0.8265416605, green: 0.8265416605, blue: 0.8265416605, alpha: 1)
         }
         
         for txt in input {
-            txt.layer.borderColor = viewColor.cgColor
+            txt.layer.borderColor = #colorLiteral(red: 0.8265416605, green: 0.8265416605, blue: 0.8265416605, alpha: 1)
         }
         
         for btn in buttons {
-            if let customBackgroundColor = btn.customBackgroundColor {
-                // Custom BackgroundColor set
-                btn.backgroundColor = customBackgroundColor
-            } else {
-                // Use default BackgroundColor derived from AlertStyle
-                btn.backgroundColor = viewColor
-            }
+            //            if let customBackgroundColor = btn.customBackgroundColor {
+            //                // Custom BackgroundColor set
+            //                btn.backgroundColor = customBackgroundColor
+            //            } else {
+            //                // Use default BackgroundColor derived from AlertStyle
+            //                btn.backgroundColor = viewColor
+            //            }
             
             if let customTextColor = btn.customTextColor {
                 // Custom TextColor set
@@ -702,6 +707,8 @@ open class EAAlertView: UIViewController {
                 // Use default BackgroundColor derived from AlertStyle
                 btn.setTitleColor(UIColorFromRGB(colorTextButton ?? 0xFFFFFF), for:UIControlState())
             }
+            
+            btn.gradientColors = [#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1), #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)]
         }
         
         // Adding timeout

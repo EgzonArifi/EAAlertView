@@ -1,0 +1,6 @@
+framework module EAAlertView {
+  umbrella header "EAAlertView-umbrella.h"
+
+  export *
+  module * { export * }
+}

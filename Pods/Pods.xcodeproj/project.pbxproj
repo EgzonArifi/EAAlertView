@@ -7,81 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1924573446808F04E8DD1294D566AC37 /* EMSpinnerButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47180015B56E1C5749B89FACC1481779 /* EMSpinnerButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20C4445EF90E977D7B189945AEBC557E /* Pods-EAAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FB8D3C55E6F07982A7E9A6B29B100E /* Pods-EAAlertView-dummy.m */; };
-		2D9587E571BC4BA375C53FDC8C198315 /* EMSpinnerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966B146A2D82A0A9BE4DB6CABBE51CE /* EMSpinnerLayer.swift */; };
-		73BDAE3536BCC8D1E6415A12EA5E1B5A /* Pods-EAAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D15FDE2C412A949A4BDFC8F782604C4 /* Pods-EAAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A01518807E75F321FBCFD688ADEA34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		818CA0F330D816B0A19977FE466FD5D3 /* EMSpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F62A76B0A71F3E238010941835D78E /* EMSpinnerButton.swift */; };
-		9AF8CA0810AFCF9AB781ECE880361648 /* EMSpinnerButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C783D4CBCD76273EA20B92725D74AF49 /* EMSpinnerButton-dummy.m */; };
-		BE2662DF479416E261AC02207A446A7C /* EMSpinnerButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C2DA57C4A754143D7A67C26CF5359F84 /* EMSpinnerButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEE871C07D51E12A9552C7C347E6CE25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5697F326745D130D08C4EBB376E27C7F /* Pods-EAAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D15FDE2C412A949A4BDFC8F782604C4 /* Pods-EAAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC513CAEA70D07BCC4E54393CAF1763 /* Pods-EAAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FB8D3C55E6F07982A7E9A6B29B100E /* Pods-EAAlertView-dummy.m */; };
+		FFDE57DAB3947CCDD173BB6117520548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		1899941E1FD5C138B3A87B004A771580 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FBB32A8FCA217B3668D3110505389BDB;
-			remoteInfo = EMSpinnerButton;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		03C3D1090D44692E3BE5EB462262DD5B /* EMSpinnerButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMSpinnerButton.xcconfig; sourceTree = "<group>"; };
-		1966B146A2D82A0A9BE4DB6CABBE51CE /* EMSpinnerLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMSpinnerLayer.swift; path = EMSpinnerButton/EMSpinnerButton/EMSpinnerLayer.swift; sourceTree = "<group>"; };
 		20681CBF6B6CA5945AD18D3A5544A4EB /* Pods-EAAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EAAlertView.release.xcconfig"; sourceTree = "<group>"; };
 		20CE203592D734910143F9344FB9015B /* Pods-EAAlertView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EAAlertView-acknowledgements.markdown"; sourceTree = "<group>"; };
 		29951DE02D95957088527E191E1774B9 /* Pods-EAAlertView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EAAlertView-acknowledgements.plist"; sourceTree = "<group>"; };
 		45F5E5A8D31C6D3DBBD5E7E7173A9370 /* Pods-EAAlertView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EAAlertView-resources.sh"; sourceTree = "<group>"; };
-		47180015B56E1C5749B89FACC1481779 /* EMSpinnerButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMSpinnerButton-umbrella.h"; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5E0724B707F88462DBA51D597C9383D1 /* Pods-EAAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EAAlertView.debug.xcconfig"; sourceTree = "<group>"; };
-		63D4C916E91D644315D28C6D15232412 /* EMSpinnerButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMSpinnerButton-prefix.pch"; sourceTree = "<group>"; };
 		8D15FDE2C412A949A4BDFC8F782604C4 /* Pods-EAAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EAAlertView-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0FB8D3C55E6F07982A7E9A6B29B100E /* Pods-EAAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EAAlertView-dummy.m"; sourceTree = "<group>"; };
-		A4F62A76B0A71F3E238010941835D78E /* EMSpinnerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EMSpinnerButton.swift; path = EMSpinnerButton/EMSpinnerButton/EMSpinnerButton.swift; sourceTree = "<group>"; };
 		A6CA9BDD75AB3350DF00ECD565E45E0C /* Pods-EAAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EAAlertView.modulemap"; sourceTree = "<group>"; };
-		A99D57FA64C236E7048A2A4602F44B13 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2DA57C4A754143D7A67C26CF5359F84 /* EMSpinnerButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMSpinnerButton.h; path = EMSpinnerButton/EMSpinnerButton.h; sourceTree = "<group>"; };
-		C783D4CBCD76273EA20B92725D74AF49 /* EMSpinnerButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMSpinnerButton-dummy.m"; sourceTree = "<group>"; };
-		D7399601614AB26432B2CF87E82F4DEC /* Pods_EAAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EAAlertView.framework; path = "Pods-EAAlertView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC91AD669868D1FEA48F82410AEAEC4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA5F1F43F3CDFE7D13A0008585E1A05B /* EMSpinnerButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMSpinnerButton.modulemap; sourceTree = "<group>"; };
-		FFC4261D56F3664411D924F03AA98FF8 /* EMSpinnerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMSpinnerButton.framework; path = EMSpinnerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B2B0EB8236ABA54C0D0B05B907AD99 /* Pods_EAAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EAAlertView.framework; path = "Pods-EAAlertView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1A695C65236C05198079F3F13DAC845C /* Frameworks */ = {
+		FF5D1A46936CAAA03F11F12DABDB4F42 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEE871C07D51E12A9552C7C347E6CE25 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBC7BC2B30E2E3F05D58202310D5C6DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7A01518807E75F321FBCFD688ADEA34C /* Foundation.framework in Frameworks */,
+				FFDE57DAB3947CCDD173BB6117520548 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EA68B4F8F78BAB21664CE39DD3AC8DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FFC4261D56F3664411D924F03AA98FF8 /* EMSpinnerButton.framework */,
-				D7399601614AB26432B2CF87E82F4DEC /* Pods_EAAlertView.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +47,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6184D94EA13429758E765CA159FC463B /* Pods */ = {
+		5EC9EF6738C0C5E079FB0960EC77B973 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0C5DD627AC7103CC46028524434E2FE /* EMSpinnerButton */,
+				F3B2B0EB8236ABA54C0D0B05B907AD99 /* Pods_EAAlertView.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		697B041FE892F62AC3B0F6AB45EB5641 /* Targets Support Files */ = {
@@ -111,8 +68,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6184D94EA13429758E765CA159FC463B /* Pods */,
-				0EA68B4F8F78BAB21664CE39DD3AC8DD /* Products */,
+				5EC9EF6738C0C5E079FB0960EC77B973 /* Products */,
 				697B041FE892F62AC3B0F6AB45EB5641 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -142,88 +98,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0C5DD627AC7103CC46028524434E2FE /* EMSpinnerButton */ = {
-			isa = PBXGroup;
-			children = (
-				C2DA57C4A754143D7A67C26CF5359F84 /* EMSpinnerButton.h */,
-				A4F62A76B0A71F3E238010941835D78E /* EMSpinnerButton.swift */,
-				1966B146A2D82A0A9BE4DB6CABBE51CE /* EMSpinnerLayer.swift */,
-				F6019813F1A4E1BFEBFC0454B289FEF0 /* Support Files */,
-			);
-			name = EMSpinnerButton;
-			path = EMSpinnerButton;
-			sourceTree = "<group>";
-		};
-		F6019813F1A4E1BFEBFC0454B289FEF0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA5F1F43F3CDFE7D13A0008585E1A05B /* EMSpinnerButton.modulemap */,
-				03C3D1090D44692E3BE5EB462262DD5B /* EMSpinnerButton.xcconfig */,
-				C783D4CBCD76273EA20B92725D74AF49 /* EMSpinnerButton-dummy.m */,
-				63D4C916E91D644315D28C6D15232412 /* EMSpinnerButton-prefix.pch */,
-				47180015B56E1C5749B89FACC1481779 /* EMSpinnerButton-umbrella.h */,
-				A99D57FA64C236E7048A2A4602F44B13 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/EMSpinnerButton";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		23098AB58656DE87913B64F162B4097A /* Headers */ = {
+		AFEE2B7CECAE307BBC4B3DAA900CD40F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1924573446808F04E8DD1294D566AC37 /* EMSpinnerButton-umbrella.h in Headers */,
-				BE2662DF479416E261AC02207A446A7C /* EMSpinnerButton.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C237F0292C176DE673A2A30FAF1B471 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				73BDAE3536BCC8D1E6415A12EA5E1B5A /* Pods-EAAlertView-umbrella.h in Headers */,
+				5697F326745D130D08C4EBB376E27C7F /* Pods-EAAlertView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D72A472AC05C667610E67A3529E8D76D /* Pods-EAAlertView */ = {
+		2122E5A3E63A637D9278CD9557003CB8 /* Pods-EAAlertView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7C7A78228A15B605B33082CD0E8CE8FF /* Build configuration list for PBXNativeTarget "Pods-EAAlertView" */;
+			buildConfigurationList = EDBE59E20BD76906A078D366803B37B3 /* Build configuration list for PBXNativeTarget "Pods-EAAlertView" */;
 			buildPhases = (
-				D01C904AB6681C15A952CD269C0BBF47 /* Sources */,
-				DBC7BC2B30E2E3F05D58202310D5C6DA /* Frameworks */,
-				3C237F0292C176DE673A2A30FAF1B471 /* Headers */,
+				93A793183DF963D920CB2BBED7B1A567 /* Sources */,
+				FF5D1A46936CAAA03F11F12DABDB4F42 /* Frameworks */,
+				AFEE2B7CECAE307BBC4B3DAA900CD40F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D017958D61A63D97C0992A44D9A3FDF1 /* PBXTargetDependency */,
 			);
 			name = "Pods-EAAlertView";
 			productName = "Pods-EAAlertView";
-			productReference = D7399601614AB26432B2CF87E82F4DEC /* Pods_EAAlertView.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FBB32A8FCA217B3668D3110505389BDB /* EMSpinnerButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B1FD0F161F6D3C7F2B33EA32FF41D709 /* Build configuration list for PBXNativeTarget "EMSpinnerButton" */;
-			buildPhases = (
-				98B9232EE480F22BE81FF69B7AAF205A /* Sources */,
-				1A695C65236C05198079F3F13DAC845C /* Frameworks */,
-				23098AB58656DE87913B64F162B4097A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EMSpinnerButton;
-			productName = EMSpinnerButton;
-			productReference = FFC4261D56F3664411D924F03AA98FF8 /* EMSpinnerButton.framework */;
+			productReference = F3B2B0EB8236ABA54C0D0B05B907AD99 /* Pods_EAAlertView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -243,45 +146,25 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0EA68B4F8F78BAB21664CE39DD3AC8DD /* Products */;
+			productRefGroup = 5EC9EF6738C0C5E079FB0960EC77B973 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBB32A8FCA217B3668D3110505389BDB /* EMSpinnerButton */,
-				D72A472AC05C667610E67A3529E8D76D /* Pods-EAAlertView */,
+				2122E5A3E63A637D9278CD9557003CB8 /* Pods-EAAlertView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		98B9232EE480F22BE81FF69B7AAF205A /* Sources */ = {
+		93A793183DF963D920CB2BBED7B1A567 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF8CA0810AFCF9AB781ECE880361648 /* EMSpinnerButton-dummy.m in Sources */,
-				818CA0F330D816B0A19977FE466FD5D3 /* EMSpinnerButton.swift in Sources */,
-				2D9587E571BC4BA375C53FDC8C198315 /* EMSpinnerLayer.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D01C904AB6681C15A952CD269C0BBF47 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				20C4445EF90E977D7B189945AEBC557E /* Pods-EAAlertView-dummy.m in Sources */,
+				DAC513CAEA70D07BCC4E54393CAF1763 /* Pods-EAAlertView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D017958D61A63D97C0992A44D9A3FDF1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = EMSpinnerButton;
-			target = FBB32A8FCA217B3668D3110505389BDB /* EMSpinnerButton */;
-			targetProxy = 1899941E1FD5C138B3A87B004A771580 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
@@ -342,46 +225,9 @@
 			};
 			name = Release;
 		};
-		2B724B7F779A4EA26BECC4C30FB457A3 /* Release */ = {
+		13BB441015AA3FDA287F295399D671AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C3D1090D44692E3BE5EB462262DD5B /* EMSpinnerButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EMSpinnerButton/EMSpinnerButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EMSpinnerButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EMSpinnerButton/EMSpinnerButton.modulemap";
-				PRODUCT_MODULE_NAME = EMSpinnerButton;
-				PRODUCT_NAME = EMSpinnerButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AED8A49ECCD2FB7FEB4CBA69796AB9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E0724B707F88462DBA51D597C9383D1 /* Pods-EAAlertView.debug.xcconfig */;
+			baseConfigurationReference = 20681CBF6B6CA5945AD18D3A5544A4EB /* Pods-EAAlertView.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -411,13 +257,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -482,9 +327,9 @@
 			};
 			name = Debug;
 		};
-		BD0031E7B92789F5DB7349910A93D709 /* Release */ = {
+		D7DEF09929EB776FB44C05F42ADE37F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20681CBF6B6CA5945AD18D3A5544A4EB /* Pods-EAAlertView.release.xcconfig */;
+			baseConfigurationReference = 5E0724B707F88462DBA51D597C9383D1 /* Pods-EAAlertView.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -514,44 +359,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F2709D000E8176322128BA355FAA8EB3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C3D1090D44692E3BE5EB462262DD5B /* EMSpinnerButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EMSpinnerButton/EMSpinnerButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EMSpinnerButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/EMSpinnerButton/EMSpinnerButton.modulemap";
-				PRODUCT_MODULE_NAME = EMSpinnerButton;
-				PRODUCT_NAME = EMSpinnerButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -570,20 +377,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7C7A78228A15B605B33082CD0E8CE8FF /* Build configuration list for PBXNativeTarget "Pods-EAAlertView" */ = {
+		EDBE59E20BD76906A078D366803B37B3 /* Build configuration list for PBXNativeTarget "Pods-EAAlertView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AED8A49ECCD2FB7FEB4CBA69796AB9D /* Debug */,
-				BD0031E7B92789F5DB7349910A93D709 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B1FD0F161F6D3C7F2B33EA32FF41D709 /* Build configuration list for PBXNativeTarget "EMSpinnerButton" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2709D000E8176322128BA355FAA8EB3 /* Debug */,
-				2B724B7F779A4EA26BECC4C30FB457A3 /* Release */,
+				D7DEF09929EB776FB44C05F42ADE37F7 /* Debug */,
+				13BB441015AA3FDA287F295399D671AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

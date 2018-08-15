@@ -1,6 +1,0 @@
-framework module EMSpinnerButton {
-  umbrella header "EMSpinnerButton-umbrella.h"
-
-  export *
-  module * { export * }
-}

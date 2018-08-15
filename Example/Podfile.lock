@@ -1,0 +1,16 @@
+PODS:
+  - EAAlertView (0.1.1)
+
+DEPENDENCIES:
+  - EAAlertView (from `/Users/egzonarifi/Documents/Libraries/EAAlertView`)
+
+EXTERNAL SOURCES:
+  EAAlertView:
+    :path: "/Users/egzonarifi/Documents/Libraries/EAAlertView"
+
+SPEC CHECKSUMS:
+  EAAlertView: f5a8b26c831a93235c75571203d778f50c8d3b5c
+
+PODFILE CHECKSUM: b13079845c35975124d22e4a4f2281c843f3b8c3
+
+COCOAPODS: 1.5.3
