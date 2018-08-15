@@ -22,10 +22,10 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        //alertTextInput()
+        alertTextInput()
         //alertPickerView()
         //alertDatePickerView()
-        alertTermsView()
+        //alertTermsView()
     }
     
     func alertTermsView() {
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Select") {
             alert.dismiss(animated: true, completion: .none)
         }
-        _ = alert.showSuccess("Number of kids", subTitle: "Gib den Vierstelligen Code ein")
+        _ = alert.showSuccess("Picker", subTitle: "Gib den Vierstelligen Code ein")
     }
     
     func alertTextInput() {
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
         
         let alert = EAAlertView(appearance: appearance)
         
-        let txtCode = alert.addTextField("Eingeben")
+        let txtCode = alert.addTextField("type")
         txtCode.keyboardType = .phonePad
         txtCode.accessibilityIdentifier = "alertSMSCode"
         
@@ -95,10 +95,10 @@ class ViewController: UIViewController {
         }
         self.alerLoginButton = btn
         
-        _ = alert.addButton("Kein Code erhalten?", backgroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0), textColor:#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)) {
+        _ = alert.addButton("No code received?", backgroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0), textColor:#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)) {
             
         }
-        _ = alert.showSuccess("SMS Code", subTitle: "Gib den Vierstelligen Code ein")
+        _ = alert.showSuccess("SMS Code", subTitle: "Enter the four-digit code")
     }
 
 
