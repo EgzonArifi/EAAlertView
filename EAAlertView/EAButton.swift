@@ -42,8 +42,8 @@ open class EAButton: UIButton {
         super.init(frame:frame)
     }
     
-    internal lazy var spinner: EMSpinnerLayer = {
-        let spiner = EMSpinnerLayer(frame: self.frame)
+    internal lazy var spinner: EASpinnerLayer = {
+        let spiner = EASpinnerLayer(frame: self.frame)
         self.layer.addSublayer(spiner)
         return spiner
     }()

@@ -1,5 +1,5 @@
 //
-//  EMLoadingButton.swift
+//  EALoadingButton.swift
 //  ButtonAnimation
 //
 //  Created by Eduardo Moll on 11/22/17.
@@ -27,7 +27,7 @@ extension CAGradientLayer {
 }
 
 @IBDesignable
-open class EMSpinnerButton: UIButton {
+open class EASpinnerButton: UIButton {
   // MARK: - Properties
   internal var storedTitle: String?
   internal var animationDuration: CFTimeInterval = 0.1
@@ -46,8 +46,8 @@ open class EMSpinnerButton: UIButton {
     }
   }
   
-  internal lazy var spinner: EMSpinnerLayer = {
-    let spiner = EMSpinnerLayer(frame: self.frame)
+  internal lazy var spinner: EASpinnerLayer = {
+    let spiner = EASpinnerLayer(frame: self.frame)
     self.layer.addSublayer(spiner)
     return spiner
   }()
@@ -117,7 +117,7 @@ open class EMSpinnerButton: UIButton {
   }
 }
 
-internal extension EMSpinnerButton {
+internal extension EASpinnerButton {
   internal func setUp() {
     //self.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
     self.backgroundColor = .emLightBlue
@@ -126,7 +126,7 @@ internal extension EMSpinnerButton {
 }
 
 // MARK: - Animation Methods
-internal extension EMSpinnerButton {
+internal extension EASpinnerButton {
   
   internal func collapseAnimation() {
     storedTitle = title
@@ -200,7 +200,7 @@ internal extension EMSpinnerButton {
 }
 
 // MARK: - Public Methods
-public extension EMSpinnerButton {
+public extension EASpinnerButton {
   
   /**
     Animates the the button with the given animation

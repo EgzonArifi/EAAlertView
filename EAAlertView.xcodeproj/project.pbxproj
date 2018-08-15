@@ -18,8 +18,8 @@
 		77D248DD21241A3100CB7A39 /* picker.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D248DC21241A3000CB7A39 /* picker.png */; };
 		77D248DF21241A9200CB7A39 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D248DE21241A9200CB7A39 /* code.png */; };
 		77D248E121241AAA00CB7A39 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 77D248E021241AAA00CB7A39 /* loading.png */; };
-		77D875892122EEF100FE4250 /* EMSpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D875872122EEF100FE4250 /* EMSpinnerButton.swift */; };
-		77D8758A2122EEF100FE4250 /* EMSpinnerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D875882122EEF100FE4250 /* EMSpinnerLayer.swift */; };
+		77D248E42124645B00CB7A39 /* EASpinnerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D248E22124645A00CB7A39 /* EASpinnerLayer.swift */; };
+		77D248E52124645B00CB7A39 /* EASpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D248E32124645A00CB7A39 /* EASpinnerButton.swift */; };
 		E1957AAA32D6FCA2A0250728 /* Pods_EAAlertView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21019456BF17BC4D3177E6A0 /* Pods_EAAlertView.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,8 @@
 		77D248DC21241A3000CB7A39 /* picker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picker.png; sourceTree = "<group>"; };
 		77D248DE21241A9200CB7A39 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
 		77D248E021241AAA00CB7A39 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
-		77D875872122EEF100FE4250 /* EMSpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMSpinnerButton.swift; sourceTree = "<group>"; };
-		77D875882122EEF100FE4250 /* EMSpinnerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMSpinnerLayer.swift; sourceTree = "<group>"; };
+		77D248E22124645A00CB7A39 /* EASpinnerLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EASpinnerLayer.swift; sourceTree = "<group>"; };
+		77D248E32124645A00CB7A39 /* EASpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EASpinnerButton.swift; sourceTree = "<group>"; };
 		B45E5BC8B7C5FBC14D865E81 /* Pods-EAAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlertView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EAAlertView/Pods-EAAlertView.release.xcconfig"; sourceTree = "<group>"; };
 		E0E394A13D88ADA310AB6D7D /* Pods-EAAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAAlertView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EAAlertView/Pods-EAAlertView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +85,8 @@
 				777DEFA4211E0AD1008A374E /* Enums.swift */,
 				777DEFA6211E0B01008A374E /* EAAlertViewResponder.swift */,
 				777DEFA8211E0B51008A374E /* Extension.swift */,
-				77D875872122EEF100FE4250 /* EMSpinnerButton.swift */,
-				77D875882122EEF100FE4250 /* EMSpinnerLayer.swift */,
+				77D248E32124645A00CB7A39 /* EASpinnerButton.swift */,
+				77D248E22124645A00CB7A39 /* EASpinnerLayer.swift */,
 			);
 			path = EAAlertView;
 			sourceTree = "<group>";
@@ -227,12 +227,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				777DEFA9211E0B51008A374E /* Extension.swift in Sources */,
+				77D248E42124645B00CB7A39 /* EASpinnerLayer.swift in Sources */,
 				777DEFA7211E0B01008A374E /* EAAlertViewResponder.swift in Sources */,
 				7722C077211E050A007A2384 /* EAAlertView.swift in Sources */,
+				77D248E52124645B00CB7A39 /* EASpinnerButton.swift in Sources */,
 				777DEFA5211E0AD1008A374E /* Enums.swift in Sources */,
-				77D8758A2122EEF100FE4250 /* EMSpinnerLayer.swift in Sources */,
 				777DEFA3211E0AA8008A374E /* EAButton.swift in Sources */,
-				77D875892122EEF100FE4250 /* EMSpinnerButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
