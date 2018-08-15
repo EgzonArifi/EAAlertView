@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Accept") {
             alert.dismiss(animated: true, completion: .none)
         }
-        _ = alert.showSuccess("Terms", subTitle: "")
+        _ = alert.show("Terms", subTitle: "")
     }
     
     func alertDatePickerView() {
@@ -54,7 +54,7 @@ class ViewController: UIViewController {
         _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Select") {
             alert.dismiss(animated: true, completion: .none)
         }
-        _ = alert.showSuccess("Birthdate", subTitle: "Gib den Vierstelligen Code ein")
+        _ = alert.show("Birthdate", subTitle: "Gib den Vierstelligen Code ein")
     }
     
     func alertPickerView() {
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Select") {
             alert.dismiss(animated: true, completion: .none)
         }
-        _ = alert.showSuccess("Picker", subTitle: "Gib den Vierstelligen Code ein")
+        _ = alert.show("Picker", subTitle: "Gib den Vierstelligen Code ein")
     }
     
     func alertTextInput() {
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
         _ = alert.addButton("No code received?", backgroundColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0), textColor:#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)) {
             
         }
-        _ = alert.showSuccess("SMS Code", subTitle: "Enter the four-digit code")
+        _ = alert.show("SMS Code", subTitle: "Enter the four-digit code")
     }
 
 

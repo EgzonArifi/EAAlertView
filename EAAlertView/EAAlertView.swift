@@ -583,9 +583,9 @@ open class EAAlertView: UIViewController {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .success, colorStyle: colorAsUInt, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
-    // showSuccess(view, title, subTitle)
+    // show(view, title, subTitle)
     @discardableResult
-    open func showSuccess(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func show(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .success, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
