@@ -1,5 +1,5 @@
 PODS:
-  - EAAlertView (0.1.1)
+  - EAAlertView (0.1.3)
 
 DEPENDENCIES:
   - EAAlertView (from `/Users/egzonarifi/Documents/Libraries/EAAlertView`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "/Users/egzonarifi/Documents/Libraries/EAAlertView"
 
 SPEC CHECKSUMS:
-  EAAlertView: f5a8b26c831a93235c75571203d778f50c8d3b5c
+  EAAlertView: 590f20a4f32ae3ca5589331226e1ec17f13086fd
 
 PODFILE CHECKSUM: b13079845c35975124d22e4a4f2281c843f3b8c3
 

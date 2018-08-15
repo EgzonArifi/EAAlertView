@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "EAAlertView"
-s.version      = "0.1.3"
+s.version      = "0.1.4"
 s.summary      = "iOS 11 style alerts"
 s.homepage     = "https://github.com/EgzonArifi/EAAlertView"
 s.license      = "MIT"
