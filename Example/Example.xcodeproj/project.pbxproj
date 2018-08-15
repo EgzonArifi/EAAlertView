@@ -12,7 +12,6 @@
 		77D248C7212331B500CB7A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D248C5212331B500CB7A39 /* Main.storyboard */; };
 		77D248C9212331B700CB7A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77D248C8212331B700CB7A39 /* Assets.xcassets */; };
 		77D248CC212331B700CB7A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D248CA212331B700CB7A39 /* LaunchScreen.storyboard */; };
-		77D248D52124088C00CB7A39 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D248D42124088C00CB7A39 /* PickerView.swift */; };
 		E1BC0A8E171625F3695A1201 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0F1A4146DD586EBCFDE0E1 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		77D248C8212331B700CB7A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77D248CB212331B700CB7A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77D248CD212331B700CB7A39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77D248D42124088C00CB7A39 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		9A7944F485A5A225A4C34B12 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +69,6 @@
 		77D248C0212331B500CB7A39 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				77D248D3212407FA00CB7A39 /* Picker */,
 				77D248C1212331B500CB7A39 /* AppDelegate.swift */,
 				77D248C3212331B500CB7A39 /* ViewController.swift */,
 				77D248C5212331B500CB7A39 /* Main.storyboard */,
@@ -80,14 +77,6 @@
 				77D248CD212331B700CB7A39 /* Info.plist */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		77D248D3212407FA00CB7A39 /* Picker */ = {
-			isa = PBXGroup;
-			children = (
-				77D248D42124088C00CB7A39 /* PickerView.swift */,
-			);
-			path = Picker;
 			sourceTree = "<group>";
 		};
 		9860FA6738B57D164D256A3E /* Pods */ = {
@@ -213,7 +202,6 @@
 			files = (
 				77D248C4212331B500CB7A39 /* ViewController.swift in Sources */,
 				77D248C2212331B500CB7A39 /* AppDelegate.swift in Sources */,
-				77D248D52124088C00CB7A39 /* PickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

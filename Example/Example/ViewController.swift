@@ -36,10 +36,10 @@ class ViewController: UIViewController {
         let textView = alert.addTextView()
         textView.text = "UITextView displays a region that can contain multiple lines of editable text. When a user taps a text view, a keyboard appears; when a user taps Return in the keyboard, the keyboard disappears and the text view can handle the input in an application-specific way. You can specify attributes, such as font, color, and alignment, that apply to all text in a text view. UITextView displays a region that can contain multiple lines of editable text. When a user taps a text view, a keyboard appears; when a user taps Return in the keyboard, the keyboard disappears and the text view can handle the input in an application-specific way. You can specify attributes, such as font, color, and alignment, that apply to all text in a text view.UITextView displays a region that can contain multiple lines of editable text. When a user taps a text view, a keyboard appears; when a user taps Return in the keyboard, the keyboard disappears and the text view can handle the input in an application-specific way. You can specify attributes, such as font, color, and alignment, that apply to all text in a text view. UITextView displays a region that can contain multiple lines of editable text. When a user taps a text view, a keyboard appears; when a user taps Return in the keyboard, the keyboard disappears and the text view can handle the input in an application-specific way. You can specify attributes, such as font, color, and alignment, that apply to all text in a text view."
         
-        _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Akzeptieren") {
+        _ = alert.addButton(backgroundImage: #imageLiteral(resourceName: "gradient_btn"),"Accept") {
             alert.dismiss(animated: true, completion: .none)
         }
-        _ = alert.showSuccess("AGB's", subTitle: "")
+        _ = alert.showSuccess("Terms", subTitle: "")
     }
     
     func alertDatePickerView() {
