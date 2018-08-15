@@ -53,3 +53,29 @@ alert.addAction(image: image, title: "Title", color: .black, style: .default) { 
 // show alert
 _ = alert.show("Title", subTitle: "subtitle")
 ```
+
+
+## Installing
+
+#### Manually
+
+ `pod 'EAAlertView'`
+
+## Requirements
+
+* Swift 4
+* iOS 11 or higher
+
+## Authors
+
+* **Egzon Arifi** -  [egzonarifi](https://github.com/egzonarifi)
+
+## Communication
+
+* If you **found a bug**, open an issue.
+* If you **have a feature request**, open an issue.
+* If you **want to contribute**, submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
