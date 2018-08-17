@@ -54,6 +54,26 @@ alert.addAction(image: image, title: "Title", color: .black, style: .default) { 
 _ = alert.show("Title", subTitle: "subtitle")
 ```
 
+## Date picker
+
+<div align = "center">
+<img src="/Resources/birthdate.png" width="350" />
+</div>
+
+
+```swift
+let picker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: self.view.frame.width*0.8, height: 200))
+picker.datePickerMode = UIDatePickerMode.date
+
+let appearance = EAAlertView.EAAppearance(kButtonHeight: 60, showCloseButton: false, shouldAutoDismiss: false)
+let alert = EAAlertView(appearance: appearance)
+alert.customSubview = picker
+
+_ = alert.addButton(backgroundImage: image), "Select") {
+   alert.dismiss(animated: true, completion: .none)
+}
+_ = alert.show("Birthdate", subTitle: " ")
+```
 
 ## Installing
 
