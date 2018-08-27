@@ -75,6 +75,26 @@ _ = alert.addButton(backgroundImage: image), "Select") {
 _ = alert.show("Birthdate", subTitle: " ")
 ```
 
+## Text View
+
+<div align = "center">
+<img src="/Resources/terms.png" width="350" />
+</div>
+
+
+```swift
+let appearance = EAAlertView.EAAppearance(kTextViewdHeight: self.view.frame.height*0.6, kButtonHeight: 60, showCloseButton: false, shouldAutoDismiss: false)
+let alert = EAAlertView(appearance: appearance)
+
+let textView = alert.addTextView()
+textView.text = "text"
+
+_ = alert.addButton(backgroundImage: image, "Accept") {
+alert.dismiss(animated: true, completion: .none)
+}
+_ = alert.show("Terms", subTitle: "")
+```
+
 ## Installing
 
 #### Cocoapods
