@@ -330,7 +330,7 @@ open class EAAlertView: UIViewController {
         windowHeight += viewText.text.isEmpty ? 0 : appearance.margin.textViewBottom // only viewText.text is not empty should have margin.
         
         // Set frames
-        _ = (sz.width - appearance.kWindowWidth) / 2
+        let x = (sz.width - appearance.kWindowWidth) / 2
         var y = (sz.height - windowHeight - (appearance.kCircleHeight / 8)) / 2
         contentView.frame = CGRect(x:x, y:y, width:appearance.kWindowWidth, height:windowHeight)
         contentView.layer.cornerRadius = 8//appearance.contentViewCornerRadius
