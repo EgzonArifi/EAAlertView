@@ -179,6 +179,7 @@ open class EAAlertView: UIViewController {
     var contentView = UIView()
     var circleBG = UIView(frame:CGRect(x:0, y:0, width:kCircleHeightBackground, height:kCircleHeightBackground))
     var circleView = UIView()
+    open var circleButton = UIButton()
     var circleIconView = UIView()
     var timeout: EATimeoutConfiguration?
     var showTimeoutTimer: Timer?
@@ -229,13 +230,13 @@ open class EAAlertView: UIViewController {
         contentView.addSubview(labelTitle)
         contentView.addSubview(viewText)
         // Circle View
-        /*circleBG.backgroundColor = appearance.circleBackgroundColor
-         circleBG.layer.cornerRadius = circleBG.frame.size.height / 2
-         baseView.addSubview(circleBG)
-         circleBG.addSubview(circleView)
-         let x = (kCircleHeightBackground - appearance.kCircleHeight) / 2
-         circleView.frame = CGRect(x:x, y:x+appearance.kCircleTopPosition, width:appearance.kCircleHeight, height:appearance.kCircleHeight)
-         circleView.layer.cornerRadius = circleView.frame.size.height / 2*/
+        circleBG.backgroundColor = appearance.circleBackgroundColor
+        circleBG.layer.cornerRadius = 6//circleBG.frame.size.height / 2
+        baseView.addSubview(circleBG)
+        circleBG.addSubview(circleView)
+        let x = (kCircleHeightBackground - appearance.kCircleHeight) / 2
+        circleView.frame = CGRect(x:x, y:x+appearance.kCircleTopPosition, width:contentView.frame.width, height:appearance.kCircleHeight)
+        //circleView.layer.cornerRadius = circleView.frame.size.height / 2
         // Title
         labelTitle.numberOfLines = 0
         labelTitle.textAlignment = .center
@@ -332,10 +333,10 @@ open class EAAlertView: UIViewController {
         var x = (sz.width - appearance.kWindowWidth) / 2
         var y = (sz.height - windowHeight - (appearance.kCircleHeight / 8)) / 2
         contentView.frame = CGRect(x:x, y:y, width:appearance.kWindowWidth, height:windowHeight)
-        contentView.layer.cornerRadius = appearance.contentViewCornerRadius
+        contentView.layer.cornerRadius = 8//appearance.contentViewCornerRadius
         y -= kCircleHeightBackground * 0.6
-        x = (sz.width - kCircleHeightBackground) / 2
-        circleBG.frame = CGRect(x:x, y:y+appearance.kCircleBackgroundTopPosition, width:kCircleHeightBackground, height:kCircleHeightBackground)
+        //x = (sz.width - kCircleHeightBackground) / 2
+        circleBG.frame = CGRect(x:x, y:y-appearance.kCircleBackgroundTopPosition, width:appearance.kWindowWidth, height:kCircleHeightBackground)
         
         //adjust Title frame based on circularIcon show/hide flag
         //        let titleOffset : CGFloat = appearance.showCircularIcon ? 0.0 : -12.0
@@ -568,7 +569,7 @@ open class EAAlertView: UIViewController {
     
     // showCustom(view, title, subTitle, UIColor, UIImage)
     @discardableResult
-    open func showCustom(_ title: String, subTitle: String? = nil, color: UIColor, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showCustom(_ title: String, subTitle: String? = nil, color: UIColor, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         var red: CGFloat = 0, green: CGFloat = 0, blue: CGFloat = 0, alpha: CGFloat = 0
         
         color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
@@ -585,55 +586,55 @@ open class EAAlertView: UIViewController {
     
     // show(view, title, subTitle)
     @discardableResult
-    open func show(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
-        return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .success, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
+    open func show(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.success.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+        return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .success, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, backgorundCircleImage: backgorundCircleImage, circleButtonTitle: circleButtonTitle, animationStyle: animationStyle)
     }
     
     // showError(view, title, subTitle)
     @discardableResult
-    open func showError(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.error.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showError(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.error.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .error, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showNotice(view, title, subTitle)
     @discardableResult
-    open func showNotice(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.notice.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showNotice(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.notice.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .notice, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showWarning(view, title, subTitle)
     @discardableResult
-    open func showWarning(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.warning.defaultColorInt, colorTextButton: UInt=0x000000, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showWarning(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.warning.defaultColorInt, colorTextButton: UInt=0x000000, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .warning, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showInfo(view, title, subTitle)
     @discardableResult
-    open func showInfo(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.info.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showInfo(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.info.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .info, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showWait(view, title, subTitle)
     @discardableResult
-    open func showWait(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt?=EAAlertViewStyle.wait.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showWait(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt?=EAAlertViewStyle.wait.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .wait, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     @discardableResult
-    open func showEdit(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.edit.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showEdit(_ title: String, subTitle: String? = nil, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt=EAAlertViewStyle.edit.defaultColorInt, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         return showTitle(title, subTitle: subTitle, timeout: timeout, completeText:closeButtonTitle, style: .edit, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showTitle(view, title, subTitle, style)
     @discardableResult
-    open func showTitle(_ title: String, subTitle: String? = nil, style: EAAlertViewStyle, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt?=0x000000, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showTitle(_ title: String, subTitle: String? = nil, style: EAAlertViewStyle, closeButtonTitle:String?=nil, timeout:EATimeoutConfiguration?=nil, colorStyle: UInt?=0x000000, colorTextButton: UInt=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         
         return showTitle(title, subTitle: subTitle, timeout:timeout, completeText:closeButtonTitle, style: style, colorStyle: colorStyle, colorTextButton: colorTextButton, circleIconImage: circleIconImage, animationStyle: animationStyle)
     }
     
     // showTitle(view, title, subTitle, timeout, style)
     @discardableResult
-    open func showTitle(_ title: String, subTitle: String? = nil, timeout: EATimeoutConfiguration?, completeText: String?, style: EAAlertViewStyle, colorStyle: UInt?=0x000000, colorTextButton: UInt?=0xFFFFFF, circleIconImage: UIImage? = nil, animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
+    open func showTitle(_ title: String, subTitle: String? = nil, timeout: EATimeoutConfiguration?, completeText: String?, style: EAAlertViewStyle, colorStyle: UInt?=0x000000, colorTextButton: UInt?=0xFFFFFF, circleIconImage: UIImage? = nil, backgorundCircleImage: UIImage? = nil, circleButtonTitle: String? = "", animationStyle: EAAnimationStyle = .topToBottom) -> EAAlertViewResponder {
         selfReference = self
         view.alpha = 0
         view.tag = uniqueTag
@@ -678,10 +679,19 @@ open class EAAlertView: UIViewController {
         // Alert view colour and images
         circleView.backgroundColor = viewColor
         
-        //        circleView.addSubview(circleIconView)
-        //        let x = (appearance.kCircleHeight - appearance.kCircleIconHeight) / 2
-        //        circleIconView.frame = CGRect( x: x, y: x, width: appearance.kCircleIconHeight, height: appearance.kCircleIconHeight)
-        //        circleIconView?.layer.masksToBounds = true
+        // circleIconView = UIButton() //UIImageView(image: circleIconImage!)
+        let x = (appearance.kCircleHeight - appearance.kCircleIconHeight) / 2
+        
+        circleButton = UIButton(frame: CGRect(x:-3, y:-4, width:appearance.kWindowWidth, height:kCircleHeightBackground))
+        circleButton.setImage(circleIconImage, for: .normal)
+        circleButton.setBackgroundImage(backgorundCircleImage, for: .normal)
+        circleButton.setTitle(circleButtonTitle, for: .normal)
+        circleButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: -14, bottom: 0, right: 0)
+        
+        circleView.addSubview(circleButton)
+        //circleView.addSubview(circleIconView)
+        circleIconView.frame = CGRect( x: x, y: x, width: appearance.kCircleIconHeight, height: appearance.kCircleIconHeight)
+        circleIconView.layer.masksToBounds = true
         
         for txt in inputs {
             txt.layer.borderColor = #colorLiteral(red: 0.8265416605, green: 0.8265416605, blue: 0.8265416605, alpha: 1)
