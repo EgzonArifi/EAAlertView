@@ -70,7 +70,7 @@ let alert = EAAlertView(appearance: appearance)
 alert.customSubview = picker
 
 _ = alert.addButton(backgroundImage: image), "Select") {
-   alert.dismiss(animated: true, completion: .none)
+  alert.hideView()
 }
 _ = alert.show("Birthdate", subTitle: " ")
 ```
@@ -90,7 +90,7 @@ let textView = alert.addTextView()
 textView.text = "text"
 
 _ = alert.addButton(backgroundImage: image, "Accept") {
-alert.dismiss(animated: true, completion: .none)
+alert.hideView()
 }
 _ = alert.show("Terms", subTitle: "")
 ```
