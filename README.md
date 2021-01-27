@@ -1,5 +1,5 @@
 # EAAlertView
-iOS 11 Style Alerts
+iOS Modern Style Alerts
 
 <p align="center">
 <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" alt="Swift 4.0"/>
