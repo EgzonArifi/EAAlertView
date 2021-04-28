@@ -57,7 +57,7 @@ open class EAButton: UIButton {
         animaton.fromValue = frame.width
         animaton.toValue =  frame.height
         animaton.duration = 0.1
-        animaton.fillMode = kCAFillModeForwards
+        animaton.fillMode = CAMediaTimingFillMode.forwards
         animaton.isRemovedOnCompletion = false
         
         layer.add(animaton, forKey: animaton.keyPath)
@@ -75,7 +75,7 @@ open class EAButton: UIButton {
         animaton.fromValue = frame.height
         animaton.toValue = frame.width
         animaton.duration = 0.1
-        animaton.fillMode = kCAFillModeForwards
+        animaton.fillMode = CAMediaTimingFillMode.forwards
         animaton.isRemovedOnCompletion = false
         
         layer.add(animaton, forKey: animaton.keyPath)
